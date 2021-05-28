@@ -4,57 +4,85 @@
 <head>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title> barbearia alura </title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
 
 </head>
 
 <body>
 
   <header>
-    <h1> Barbearia Alura </h1>
-  </header>
+    <div class="caixa">
+        <h1><img src="logo.png"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<img class="banner" src="banner.jpg">  
 
-  <div class="main">
-    <img id="banner" src="img.jpg">
-    <h2 class="titulos centralizados">
-      Sobre a Barbearia Alura
-    </h2>
+  <main>
+    <section class="principal">
+      <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+      <img class="utensilios" src="utensilios.jpg" alt="utensilios de um barbeiro">
 
-    <p>
-      Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o
-      seu cabelo e barba.
-      Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a
-      cada dia.
-    </p>
+      <p>
+        Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o
+        seu cabelo e barba.
+        Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a
+        cada dia.
+      </p>
 
-    <p id="missão">
-      <em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em>
-    </p>
+      <p>
+        <em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em>
+      </p>
 
-    <p>
-      Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
-      O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação
-      dos nossos clientes.
-    </p>
+      <p>
+        Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
+        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação
+        dos nossos clientes.
+      </p>
 
-  </div>
+    </section>
 
-  <div class="beneficios">
+    <section class="mapa">
+      <h3 class="titulo-principal">Nosso estabelecimento</h3>
+      <legend>Nosso estabelecimento está localizado no coração da metropole paulistana.</legend>
+      <div class="mapa-conteudo">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14611.042900169006!2d-46.532805374530476!3d-23.72023725862637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce41dd71f80a1b%3A0xbffc72ba7feb5a00!2sVila%20Sao%20Pedro%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622120053436!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
 
-    <h3 class="titulos centralizados">
-      Beneficios
-    </h3>
+  <section class="beneficios">
 
-    <ul>
-      <li class="itens">atendimento aos clientes</li>
-      <li class="itens">espaço diferenciado</li>
-      <li class="itens">localização </li>
-      <li class="itens">profissionais qualificados </li>
-    </ul>
-    <img src="img2.png" id="imagemfoda">
-  </div>
-
+    <h3 class="titulo-principal"> Beneficios </h3>
+    <div class="conteudo-beneficios">
+      <ul class="lista-beneficios">
+        <li class="itens">Atendimento aos clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização </li>
+        <li class="itens">Profissionais qualificados </li>
+        <li class="itens">Pontualidade </li>
+        <li class="itens">Limpeza </li>
+      </ul><img src="beneficios.jpg" class="imagembeneficios">
+    </div>
+    <div class="video">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <img src="logo-branco.png">
+    <p class="rodape">&copy; Copyright Barbearia Alura - 2021 </p>
+  </footer>
 </body>
 
 </html>
