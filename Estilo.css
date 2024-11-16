@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Cor de fundo suave */
+}
+
+/* Header fixo */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilo do Exercício */
+.exercicio {
+    text-align: center;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exercicio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.exercicio .estrutura pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Estilo do formulário */
+form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+form input[type="text"]:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Botão de enviar */
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* Feedback e Good Game */
+#feedback {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #d9534f; /* Vermelho para erro */
+}
+
+#good-game {
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Exibição das vidas */
+#vidas p {
+    font-size: 1.2em;
+}
+
+/* Estilos de rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .exercicio h2 {
+        font-size: 1.5em;
+    }
+
+    .exercicio .estrutura pre {
+        font-size: 0.9em;
+    }
+
+    form input[type="text"] {
+        width: 80%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
